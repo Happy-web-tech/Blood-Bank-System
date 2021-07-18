@@ -13,9 +13,12 @@ login.addEventListener('click', ()=>{
 	window.location.href="login.php";
 });
 
-register.addEventListener('click',()=>{
+register.addEventListener('click',sendToRegister);
+
+function sendToRegister()
+{
 	window.location.href="register.php";
-});
+}
 
 availableSamples.addEventListener('click',()=>{
 	window.location.href="availableSamples.php";

@@ -6,7 +6,8 @@ availableSamplesinReceiver.onclick=()=>{
 }
 
 RequestBlood.onclick=()=>{
-	window.location.href="availableSamples.php";
+	// window.location.href="requestBlood.php";
+	window.open("requestBlood.php");
 }
 
 //

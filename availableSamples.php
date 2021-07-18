@@ -26,7 +26,7 @@
 			<h2 class="titleText">Available Blood Samples</h2>
 
 			<?php
-				include("./Database/dbConnection.php");
+				require("./Database/dbConnection.php");
 				$sql="select * from availablebloodsamples;";
 				$result=mysqli_query($con,$sql);
 				if(mysqli_num_rows($result)==0)
@@ -64,7 +64,7 @@
 								"<td> <button class ='requestButton' type='button'>Request</button> </td>".
 								"</tr>";
 							}
-					?>
+						?>
 							<script type="text/javascript" src="./Js/availableSamples.js"></script>
 					<?php
 						}

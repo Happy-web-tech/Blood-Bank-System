@@ -1,0 +1,16 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+
+.contactUsContent{
+	font-size: 3rem;
+	margin-top: 10rem;
+}

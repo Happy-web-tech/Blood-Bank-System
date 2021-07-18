@@ -36,4 +36,17 @@
 
 	</div>
 	<script type="text/javascript" src="./Js/header.js"></script>
+	<?php
+		if (isset($_COOKIE['username']) || isset($_COOKIE['username1']))
+		{
+	?>
+		<script type="text/javascript">
+			register.removeEventListener('click',sendToRegister);
+			register.onclick=()=>{
+				window.alert("You are already registered!");
+			}
+		</script>
+	<?php
+		}
+	?>
 </header>
