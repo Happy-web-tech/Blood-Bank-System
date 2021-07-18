@@ -1,0 +1,102 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.headerContainer{
+	width: 100%;
+	height: 19vh;
+	position: relative;
+	background-color: #0a3d62;
+	top: 0;
+}
+
+.part1{
+	display: flex;
+}
+
+.bloodImg{
+	width: 4.5em;
+	height:	4.2em;
+	/*border: 1px solid black;*/
+	margin: .5rem;
+	background: url(../images/bloodImg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	/*margin-top: 1rem;*/
+}
+
+.title{
+	padding: 0.25rem 0 0 0.2rem;
+	font-size: 2.1rem;
+	/*border-bottom: 1px solid black;*/
+}
+
+.part2{
+	display: flex;
+	/*padding: 0.1em 0 0.1em 0.1em;*/
+	font-size: 1.7rem;
+	/*justify-content: space-around;*/
+	position: absolute;
+	bottom: 0;
+}
+
+.part2 > nav{
+	border: 1px solid black;
+	padding: 0.1em 0.5em;
+	background-color: #f6b93b;
+}
+
+#logout{
+	border: 1px solid black;
+	cursor: pointer;
+	padding: 0.1em 0.5em;
+	background-color: #f6b93b;
+	font-size: 1.7rem;
+	display: none;
+
+}
+
+.loginNameContainer{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	display: none;
+	/*border: 1px solid yellow;*/
+}
+.loginImg{
+	width: 3rem;
+	/*border: 2px solid green;*/
+	background: url(../images/login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.welcomeUser{
+	/*border: 2px solid white;*/
+	/*position: absolute;
+	bottom: 0;
+	right: 0;*/
+	font-size: 1.8rem;
+	color: #feca57;
+	padding: 0.1em 0.4rem;
+}
+
+@media only screen and (max-width: 533px)
+{
+	.title{
+		font-size: 20px;
+		padding: 0;
+	}
+	.part2{
+		font-size: 1rem;
+	}
+	.part1{
+		display: block;
+	}
+}
