@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html{
+	/*making 1rem =15px for entire page kind of responsive*/
+	font-size: 15px;
+}
+
+body{
+	position: relative;
+	overflow: auto;
+	height: 100vh;
+}
+ 
+
+.container{
+	width: 33rem;
+	min-height: 27rem;
+	border: 2px solid black;
+	margin: auto;
+	margin: 1rem auto;
+	border-radius: 1rem;
+
+}
+.Rtitle{
+	font-size: 3rem;
+	text-align: center;
+	border: 1px solid black;
+}
+
+.registrationForm{
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	padding-top: 0.5rem;
+}
+
+.label{
+	font-size: 1.3rem;
+	padding-bottom: 0.2rem;
+}
+
+.note{
+	padding-left: 0.5rem;
+}
+
+.inputForm{
+	margin-bottom: 0.4rem;
+	font-size: 1.3rem;
+	padding: 0 0.5rem;
+	border-radius: 1rem;
+}
+
+.selectInp{
+	padding: 0;
+}
+
+.registerButton{
+	width: 7rem;
+	padding: 0.6rem;
+	align-self: center;
+	border-radius: 1rem;
+	position: relative;
+	bottom: -0.5rem;
+}
+
+.wrong{
+	color: red;
+	display: none;
+}

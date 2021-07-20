@@ -4,9 +4,15 @@
 	box-sizing: border-box;
 }
 
+html{
+	/*making 1rem =15px for entire page kind of responsive*/
+	font-size: 15px;
+}
+
+
 .headerContainer{
-	width: 100%;
-	height: 19vh;
+	width: 100vw;
+	height: 8rem;
 	position: relative;
 	background-color: #0a3d62;
 	top: 0;
@@ -29,8 +35,9 @@
 }
 
 .title{
-	padding: 0.25rem 0 0 0.2rem;
+	/*padding: 0.25rem 0 0 0.2rem;*/
 	font-size: 2.1rem;
+	/*line-height: 10rem;*/
 	/*border-bottom: 1px solid black;*/
 }
 
