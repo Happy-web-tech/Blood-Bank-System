@@ -64,30 +64,33 @@
 			<div class="Rtitle">Hospital Registration</div>
 			<form class="registrationForm" method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
 				<span class="label">Username</span>
-				<input type="text" name="username" class="inputForm  username">
+				<input type="text" name="username" class="inputForm  username" id="usernameId">
 				<span class="note">Note: Hospital name is your username</span>
 				<?php 
 					if($userExists==1)
 					{
 				 ?>
-						<span class="wrong">User already exits!</span>
-				<?php
+						<span class="wrong1">Username already exits!</span>
+						<!-- wrong1 after form submission  span created only afetr php submit-->
+					<?php
 					} 
 					else if($userExists==3)
 					{
 				 ?>
-					<span class="wrong">Invalid Username!</span>
+
+					<span class="wrong1">Invalid Username!</span>
+
 				<?php 
 					}
 				 ?>
 				 <span class="wrong">Invalid Username!</span>
 				<!--  -->
 				<span class="label">Password</span>
-				<input type="text" name="password" class="inputForm password">
+				<input type="password" name="password" class="inputForm password">
 				<span class="wrong">Invalid Password!</span>
 				<!--  -->
 				<span class="label"> Confirm Password</span>
-				<input type="text" name="confirmPassword" class="inputForm confirmPassword">
+				<input type="password" name="confirmPassword" class="inputForm confirmPassword">
 				<span class="wrong">Passwords must be same!</span>
 				<!--  -->
 				<span class="label forgotPassword">Security Question</span>
@@ -102,7 +105,7 @@
 				<span class="wrong">Invalid answer!</span>
 				<!--  -->
 				<input type="submit" name="register" value="Register" class="registerButton">
-				
+				<span class="wrong">Invalid username or password!</span>
 			</form>
 		</div>
 
@@ -111,5 +114,14 @@
 		include("footer.html");
 	?>
 	<script type="text/javascript" src="./Js/registerHospital.js"></script>
+	<?php
+		if(isset($_POST['register']))
+		{
+			//after form submission on focus event on wrong1 and display none
+		?>
+		<script type="text/javascript" src="./Js/afterForm.js"></script>
+		<?php
+		}
+	?>
 </body>
 </html>
